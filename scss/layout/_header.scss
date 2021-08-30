@@ -1,0 +1,27 @@
+@use '../abstracts/variables' as *;
+
+.header {
+  &__intro-wrapper {
+    background: url("../images/bg-curvy-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+  &__intro-img {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  &__intro {
+    color: $white;
+    text-align: center;
+    padding: 6rem 1.2rem 2rem;
+  }
+
+  &__intro-text {
+    font-family: $raleway-font;
+    margin: 1.5rem auto 2.2rem;
+    width: 95%;
+    letter-spacing: 0.1rem;
+    line-height: 1.6;
+  }
+}
