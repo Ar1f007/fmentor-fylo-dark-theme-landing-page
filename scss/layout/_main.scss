@@ -1,0 +1,22 @@
+// FEATURE Section
+//------------------------------------
+
+.features {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 6rem 0;
+
+  .feature {
+    width: 100%;
+    margin: 4rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      width: 20%;
+    }
+  }
+}
