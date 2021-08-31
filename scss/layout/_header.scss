@@ -9,6 +9,9 @@
   &__intro-img {
     width: 85%;
     margin: 0 auto;
+    position: relative;
+    top: 4rem;
+    right: 1rem;
   }
 
   &__intro {
@@ -23,5 +26,6 @@
     width: 95%;
     letter-spacing: 0.1rem;
     line-height: 1.6;
+    color: darken($color: $white, $amount: 5%);
   }
 }

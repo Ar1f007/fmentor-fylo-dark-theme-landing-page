@@ -1,0 +1,16 @@
+@use '../abstracts/variables' as *;
+
+// Header
+// ----------------------------
+.cta {
+  width: 20rem;
+  height: 4rem;
+  border: none;
+  display: inline-block;
+  background: linear-gradient(to right, $cyan, $blue);
+  border-radius: 5rem;
+  color: $white;
+  font-family: $raleway-font;
+  font-weight: 700;
+  letter-spacing: 1px;
+}

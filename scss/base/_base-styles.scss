@@ -16,9 +16,10 @@ body {
   width: 100%;
   max-width: 1440px;
   background-color: $dark-blue-main-bg;
-  background: #aca9a9;
+  // background: #aca9a9;
 }
 
 .container {
-  padding: 0 2rem;
+  width: 85%;
+  margin: 0 auto;
 }
