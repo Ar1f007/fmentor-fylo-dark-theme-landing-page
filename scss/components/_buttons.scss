@@ -14,3 +14,33 @@
   font-weight: 700;
   letter-spacing: 1px;
 }
+
+// Productive
+// ----------------------------
+.how-it-work-btn {
+  border: none;
+  color: darken($color: $cyan, $amount: 5%);
+  background: none;
+  border-bottom: 1.8px solid darken($color: $cyan, $amount: 5%);
+  width: max-content;
+  padding: 0 0 5px 0;
+  display: flex;
+  align-items: center;
+
+  .icon {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: $cyan;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  // icon - right arrow
+  .lnr {
+    color: #000;
+    font-size: 8px;
+  }
+}

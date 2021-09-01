@@ -20,3 +20,16 @@
     color: darken($color: $white, $amount: 5%);
   }
 }
+
+// Productive Section
+//-------------------------------------
+.productive {
+  .feature__heading {
+    margin-top: 5rem;
+  }
+
+  p {
+    color: darken($color: $white, $amount: 5%);
+    margin-bottom: 2.5rem;
+  }
+}
