@@ -105,7 +105,7 @@ body {
 }
 
 .feature__heading {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   font-weight: 700;
   color: white;
   margin: 2rem auto 1.5rem;
@@ -160,6 +160,44 @@ body {
 .how-it-work-btn .lnr {
   color: #000;
   font-size: 8px;
+}
+
+.card {
+  width: 95%;
+  height: auto;
+  margin: 0 auto;
+  background: #202a3c;
+  border: 0.7rem solid #1c2431;
+  border-radius: 0.8rem;
+  padding: 2rem 1.8rem;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 2.5rem;
+}
+.card__text {
+  font-size: 1.155rem;
+  line-height: 2;
+  color: #cccccc;
+  margin-bottom: 1.5rem;
+}
+.card__reviewer {
+  display: flex;
+}
+.card__reviewer-img {
+  width: 4rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 10px;
+}
+.card__reviewer-name h4 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 4px;
+}
+.card__reviewer-name p {
+  font-size: 1rem;
+  color: #bfbfbf;
 }
 
 .navbar {
@@ -227,5 +265,74 @@ body {
 }
 
 .productive {
-  margin: 3rem auto 10rem;
+  margin: 3rem auto 0;
+}
+
+.testimonial {
+  margin: 15rem auto;
+}
+.testimonial .cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.subscribe {
+  margin-bottom: 6rem;
+}
+.subscribe .container {
+  width: 90%;
+  background: #1c2431;
+  border-radius: 8px;
+  padding: 3.5rem 2.8rem 3rem;
+}
+.subscribe .feature__heading {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-align: center;
+}
+.subscribe p {
+  color: #d9d9d9;
+  text-align: center;
+  line-height: 1.8;
+  margin-bottom: 3rem;
+}
+.subscribe .form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.subscribe .form input[type=email],
+.subscribe .form button {
+  width: 100%;
+  height: auto;
+  padding: 1.1rem 0;
+  border-radius: 5rem;
+  border: none;
+}
+.subscribe .form input:focus,
+.subscribe .form input:active {
+  outline: none;
+}
+.subscribe .form input[type=email]::-moz-placeholder {
+  color: #999999;
+}
+.subscribe .form input[type=email]:-ms-input-placeholder {
+  color: #999999;
+}
+.subscribe .form input[type=email]::placeholder {
+  color: #999999;
+}
+.subscribe .form input[type=email] {
+  margin-bottom: 2.5rem;
+  padding-left: 3rem;
+}
+.subscribe .form button {
+  background: linear-gradient(to right, #65e2d9, #47a8d1);
+  color: white;
+  font-size: 1.4rem;
+  text-transform: capitalize;
 }/*# sourceMappingURL=main.css.map */
