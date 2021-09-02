@@ -33,3 +33,20 @@
     margin-bottom: 2.5rem;
   }
 }
+
+// Get started / Subscribe Section
+//------------------------------------
+.subscribe {
+  .feature__heading {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  p {
+    color: darken($color: $white, $amount: 15%);
+    text-align: center;
+    line-height: 1.8;
+    margin-bottom: 3rem;
+  }
+}
