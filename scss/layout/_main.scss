@@ -43,3 +43,15 @@
     flex-direction: column;
   }
 }
+
+// Get started / Subscribe Section
+//------------------------------------
+.subscribe {
+  margin-bottom: 6rem;
+  .container {
+    width: 90%;
+    background: $dark-blue-misc-bg;
+    border-radius: 8px;
+    padding: 3.5rem 2.8rem 3rem;
+  }
+}

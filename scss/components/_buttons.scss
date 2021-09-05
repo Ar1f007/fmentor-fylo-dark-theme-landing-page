@@ -13,6 +13,12 @@
   font-family: $raleway-font;
   font-weight: 700;
   letter-spacing: 1px;
+  cursor: pointer;
+  transform: linear-gradient 0.5s;
+
+  &:hover {
+    background: linear-gradient(90deg, $blue, $cyan);
+  }
 }
 
 // Productive
@@ -28,19 +34,26 @@
   align-items: center;
 
   .icon {
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    background: $cyan;
     margin-left: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
+}
 
-  // icon - right arrow
-  .lnr {
-    color: #000;
-    font-size: 8px;
+// Form button
+.form-btn {
+  background: linear-gradient(to right, $cyan, $blue);
+  color: $white;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  transform: linear-gradient 0.5s;
+
+  &:hover {
+    background: linear-gradient(90deg, $blue, $cyan);
   }
+}
+
+.cta:focus,
+.form-btn:focus {
+  outline: none;
+  background: linear-gradient(90deg, darken($blue, 5%), darken($cyan, 5%));
 }

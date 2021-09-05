@@ -145,6 +145,11 @@ body {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
+  cursor: pointer;
+  transform: linear-gradient 0.5s;
+}
+.cta:hover {
+  background: linear-gradient(90deg, #47a8d1, #65e2d9);
 }
 
 .how-it-work-btn {
@@ -160,18 +165,25 @@ body {
   align-items: center;
 }
 .how-it-work-btn .icon {
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  background: #65e2d9;
   margin-left: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
-.how-it-work-btn .lnr {
-  color: #000;
-  font-size: 8px;
+
+.form-btn {
+  background: linear-gradient(to right, #65e2d9, #47a8d1);
+  color: white;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  transform: linear-gradient 0.5s;
+}
+.form-btn:hover {
+  background: linear-gradient(90deg, #47a8d1, #65e2d9);
+}
+
+.cta:focus,
+.form-btn:focus {
+  outline: none;
+  background: linear-gradient(90deg, #339ecc, #4fded4);
 }
 
 .card {
@@ -253,14 +265,20 @@ body {
   color: #999999;
 }
 .subscribe .form input[type=email] {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
   padding-left: 3rem;
 }
-.subscribe .form button {
-  background: linear-gradient(to right, #65e2d9, #47a8d1);
-  color: white;
-  font-size: 1.4rem;
-  text-transform: capitalize;
+.subscribe .form .validation-text {
+  display: none;
+  line-height: 0;
+  margin-bottom: 2rem;
+  font-size: 11px;
+}
+.subscribe .form .validation-text.success {
+  color: #41b995;
+}
+.subscribe .form .validation-text.error {
+  color: #ff4242;
 }
 
 .navbar {

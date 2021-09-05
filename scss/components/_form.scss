@@ -1,0 +1,35 @@
+@use '../abstracts/variables' as *;
+
+// Get started / Subscribe Section
+//------------------------------------
+.subscribe {
+  .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    input[type="email"],
+    button {
+      width: 100%;
+      height: auto;
+      padding: 1.1rem 0;
+      border-radius: 5rem;
+      border: none;
+    }
+
+    input:focus,
+    input:active {
+      outline: none;
+    }
+
+    input[type="email"]::placeholder {
+      color: darken($color: #fff, $amount: 40%);
+    }
+
+    input[type="email"] {
+      margin-bottom: 2rem;
+      padding-left: 3rem;
+    }
+  }
+}
