@@ -31,5 +31,19 @@
       margin-bottom: 2rem;
       padding-left: 3rem;
     }
+
+    .validation-text {
+      display: none;
+      line-height: 0;
+      margin-bottom: 2rem;
+      font-size: 11px;
+    }
+
+    .validation-text.success {
+      color: $light-green;
+    }
+    .validation-text.error {
+      color: $light-red;
+    }
   }
 }
