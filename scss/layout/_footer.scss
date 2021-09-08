@@ -1,0 +1,102 @@
+@use '../abstracts/variables' as *;
+
+.footer {
+  width: 100%;
+  padding: 3rem 0 4rem;
+  color: darken($color: $white, $amount: 20%);
+}
+
+.row {
+  width: 85%;
+  margin: 0 auto;
+
+  & > *:not(:first-of-type) {
+    margin-bottom: 3rem;
+  }
+}
+
+.footer__info {
+  display: flex;
+  align-items: center;
+
+  img {
+    margin-right: 2.5rem;
+  }
+}
+
+.col a {
+  color: darken($color: $white, $amount: 20%);
+}
+
+.col a:hover {
+  color: $white;
+}
+
+.col-1 {
+  .footer__logo img {
+    width: 150px;
+  }
+
+  .footer__info img {
+    align-self: flex-start;
+  }
+}
+
+.footer__info--col-1 {
+  margin: 4rem 0 1rem;
+}
+
+.col-2 {
+  & p {
+    margin: 1rem 0;
+  }
+}
+
+.col-3 {
+  margin-top: 6rem;
+  & ul {
+    padding-left: 0;
+
+    & li {
+      margin: 1.5rem 0;
+    }
+  }
+
+  & ul:last-child {
+    margin-top: 5rem;
+  }
+}
+
+.col-4 {
+  padding-top: 3rem;
+  text-align: center;
+  .social-icons {
+    display: flex;
+    justify-content: center;
+  }
+
+  & a {
+    width: 3.2rem;
+    height: 3.2rem;
+    display: inline-block;
+    border: 1.5px solid $white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem;
+    transition: all 0.3s;
+  }
+
+  & a i {
+    color: darken($color: $white, $amount: 20%);
+    font-size: 1.5rem;
+    transition: all 0.3s;
+  }
+
+  & a:hover,
+  & a:hover i {
+    border-color: $cyan;
+    color: $cyan;
+  }
+}
