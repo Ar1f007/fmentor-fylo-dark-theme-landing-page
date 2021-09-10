@@ -385,7 +385,7 @@ body {
 }
 .navbar__link {
   font-family: "Raleway", sans-serif;
-  color: #d9d9d9;
+  color: #cccccc;
   transition: all 0.3s;
 }
 .navbar__link:hover {
@@ -642,16 +642,21 @@ body {
 .col-2 p {
   margin: 1rem 0;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1000px) {
   .col-2 {
     margin: 0;
     display: flex;
     flex-direction: column;
-    padding-left: 10%;
+    padding-left: 5%;
     justify-content: flex-start;
   }
   .col-2 p {
     margin: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .col-2 {
+    padding-left: 10%;
   }
 }
 

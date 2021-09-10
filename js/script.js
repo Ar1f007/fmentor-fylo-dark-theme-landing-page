@@ -21,7 +21,7 @@ const validate = (email) => {
 
   if (email.match(mailFormat)) {
     inputFieldEmail.value = "";
-    showMessage("success", "Thanks!");
+    showMessage("success", "Thank you");
   } else if (!email.match(mailFormat) || email.length === 0) {
     showMessage("error", "Please enter a valid email address");
   }
@@ -41,5 +41,5 @@ const showMessage = (className, message) => {
     validationTextField.classList.remove(className);
     validationTextField.textContent = "";
     validationTextField.style.display = "none";
-  }, 2000);
+  }, 1500);
 };
