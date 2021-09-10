@@ -1,17 +1,37 @@
 @use '../abstracts/variables' as *;
 
 .header {
-  &__intro-wrapper {
-    background: url("../images/bg-curvy-mobile.svg");
+  width: 100%;
+
+  background: url("../images/bg-curvy-mobile.svg"),
+    linear-gradient($dark-blue-intro-bg 60%, $dark-blue-main-bg 40%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+
+  @media screen and (min-width: 1024px) {
+    background: url("../images/bg-curvy-desktop.svg");
     background-repeat: no-repeat;
-    background-position: top;
+    background-size: 100%;
+    background-position: bottom;
+
+    padding-bottom: 6rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
+
   &__intro-img {
     width: 85%;
     margin: 0 auto;
     position: relative;
     top: 4rem;
-    right: 1rem;
+
+    @media screen and (min-width: 1024px) {
+      width: max-content;
+      top: 0;
+    }
   }
 
   &__intro {
@@ -27,5 +47,13 @@
     letter-spacing: 0.1rem;
     line-height: 1.6;
     color: darken($color: $white, $amount: 5%);
+
+    @media screen and (min-width: 1024px) {
+      width: 30%;
+      margin: 2.5rem auto;
+    }
+    @media screen and (min-width: 1600px) {
+      width: 25%;
+    }
   }
 }
