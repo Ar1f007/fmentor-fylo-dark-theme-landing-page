@@ -32,9 +32,21 @@
   padding: 0 0 5px 0;
   display: flex;
   align-items: center;
+  cursor: pointer;
+  transition: all 0.3s;
 
   .icon {
     margin-left: 5px;
+  }
+
+  &:hover {
+    color: $white;
+    border-bottom: 1.8px solid $white;
+  }
+
+  &:hover .fill {
+    fill: $white;
+    transition: all 0.3s;
   }
 }
 
@@ -47,8 +59,12 @@
   cursor: pointer;
   transform: linear-gradient 0.5s;
 
+  @media screen and (min-width: 1024px) {
+    // margin-bottom: 2rem;
+  }
+
   &:hover {
-    background: linear-gradient(90deg, $blue, $cyan);
+    background: $cyan;
   }
 }
 

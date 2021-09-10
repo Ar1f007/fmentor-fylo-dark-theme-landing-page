@@ -37,7 +37,12 @@
 
   &__link {
     font-family: $raleway-font;
-    color: $white;
+    color: darken($color: $white, $amount: 15%);
+    transition: all 0.3s;
+
+    &:hover {
+      color: $white;
+    }
 
     @media screen and (min-width: 769px) {
       font-size: 1.6rem;

@@ -2,8 +2,51 @@
 
 .footer {
   width: 100%;
-  padding: 3rem 0 4rem;
+  padding: 3rem 0 2rem;
   color: darken($color: $white, $amount: 20%);
+
+  &__logo {
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+
+    img {
+      width: 150px;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  section:last-of-type {
+    position: relative;
+    top: -8rem;
+  }
+
+  .attribution {
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translateX(-50%);
+  }
+}
+// Get started / Subscribe Section
+
+.subscribe {
+  position: relative;
+  top: -17rem;
+  .container {
+    width: 90%;
+    background: $dark-blue-intro-bg;
+
+    border-radius: 8px;
+    padding: 3.5rem 2.8rem 3rem;
+  }
+
+  @media screen and (min-width: 1024px) {
+    & .container {
+      width: 50%;
+    }
+  }
 }
 
 .row {
@@ -13,6 +56,18 @@
   & > *:not(:first-of-type) {
     margin-bottom: 3rem;
   }
+
+  @media screen and (min-width: 1024px) {
+    display: flex;
+
+    & > *:not(:first-of-type) {
+      margin-bottom: 0;
+    }
+
+    & > * {
+      width: 25%;
+    }
+  }
 }
 
 .footer__info {
@@ -21,6 +76,11 @@
 
   img {
     margin-right: 2.5rem;
+  }
+
+  @media screen and (min-width: 1024px) {
+    align-items: flex-start;
+    margin-bottom: 2rem;
   }
 }
 
@@ -44,11 +104,27 @@
 
 .footer__info--col-1 {
   margin: 4rem 0 1rem;
+
+  @media screen and (min-width: 1024px) {
+    margin: 0;
+  }
 }
 
 .col-2 {
   & p {
     margin: 1rem 0;
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+    justify-content: flex-start;
+
+    p {
+      margin: 0;
+    }
   }
 }
 
@@ -65,14 +141,42 @@
   & ul:last-child {
     margin-top: 5rem;
   }
+
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+
+    ul {
+      margin: 0;
+
+      & li:first-child {
+        margin-top: 0;
+      }
+    }
+
+    ul:last-child {
+      margin-top: 0;
+      margin-left: 5rem;
+    }
+  }
 }
 
 .col-4 {
   padding-top: 3rem;
   text-align: center;
+
+  @media screen and (min-width: 1024px) {
+    padding-top: 0;
+  }
+
   .social-icons {
     display: flex;
     justify-content: center;
+
+    @media screen and (min-width: 1024px) {
+      justify-content: flex-end;
+    }
   }
 
   & a {

@@ -73,24 +73,26 @@
 //------------------------------------
 
 .testimonial {
-  margin: 15rem auto;
+  padding: 25rem 0;
+
   .cards {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    @media screen and (min-width: 1024px) {
+      width: 70%;
+      margin: 0 auto;
+      flex-direction: row;
+    }
   }
 }
 
-// Get started / Subscribe Section
+// Footer
 //------------------------------------
-.subscribe {
-  margin-bottom: 6rem;
-  .container {
-    width: 90%;
-    background: $dark-blue-main-bg;
-    border-radius: 8px;
-    padding: 3.5rem 2.8rem 3rem;
-  }
+.footer {
+  background-color: $dark-blue-footer-bg;
+  position: relative;
 }

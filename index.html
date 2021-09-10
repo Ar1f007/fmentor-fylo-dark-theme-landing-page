@@ -156,11 +156,47 @@
             <a href="#">
               <button class="how-it-work-btn">
                 See how Fylo works
-                <img
-                  src="images/icon-arrow.svg"
-                  alt="arrow icon"
+
+                <svg
                   class="icon"
-                />
+                  width="16"
+                  height="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <defs>
+                    <circle id="b" cx="6" cy="6" r="6" />
+                    <filter
+                      x="-25%"
+                      y="-25%"
+                      width="150%"
+                      height="150%"
+                      filterUnits="objectBoundingBox"
+                      id="a"
+                    >
+                      <feOffset in="SourceAlpha" result="shadowOffsetOuter1" />
+                      <feGaussianBlur
+                        stdDeviation="1"
+                        in="shadowOffsetOuter1"
+                        result="shadowBlurOuter1"
+                      />
+                      <feColorMatrix
+                        values="0 0 0 0 0.384313725 0 0 0 0 0.878431373 0 0 0 0 0.850980392 0 0 0 0.811141304 0"
+                        in="shadowBlurOuter1"
+                      />
+                    </filter>
+                  </defs>
+                  <g fill="none" fill-rule="evenodd">
+                    <g transform="translate(2 2)">
+                      <use fill="#000" filter="url(#a)" xlink:href="#b" />
+                      <use class="fill" fill="#62E0D9" xlink:href="#b" />
+                    </g>
+                    <path
+                      d="M8.582 6l-.363.35 1.452 1.4H5.333v.5h4.338L8.22 9.65l.363.35 2.074-2z"
+                      fill="#1B2330"
+                    />
+                  </g>
+                </svg>
               </button>
             </a>
           </div>
@@ -229,7 +265,9 @@
           </div>
         </div>
       </section>
+    </main>
 
+    <footer id="footer" class="footer">
       <section class="subscribe">
         <div class="container">
           <h3 class="feature__heading">Get early access today</h3>
@@ -240,82 +278,74 @@
           </p>
 
           <form action="#" class="form">
-            <input
-              type="email"
-              name="email"
-              placeholder="email@example.com"
-              id="email"
-            />
-            <p class="validation-text"></p>
+            <div class="form-control">
+              <input
+                type="email"
+                name="email"
+                placeholder="email@example.com"
+                id="email"
+              />
+              <p class="validation-text"></p>
+            </div>
             <button type="submit" class="form-btn">Get Started For Free</button>
           </form>
         </div>
       </section>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="row">
-        <div class="col-1 footer--col-1 col">
-          <div class="footer__logo">
-            <img src="images/logo.svg" alt="logo" />
+      <section>
+        <div class="footer__logo">
+          <img src="images/logo.svg" alt="logo" />
+        </div>
+        <div class="row">
+          <div class="col-1 footer--col-1 col">
+            <div class="footer__info footer__info--col-1">
+              <img src="images/icon-location.svg" alt="location icon" />
+              <p class="footer__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua
+              </p>
+            </div>
           </div>
-          <div class="footer__info footer__info--col-1">
-            <img src="images/icon-location.svg" alt="location icon" />
-            <p class="footer__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua
-            </p>
+          <div class="col-2 col">
+            <div class="footer__info">
+              <img src="images/icon-phone.svg" alt="icon phone" />
+              <p><a href="tel:+1-543-123-4567">+1-543-123-4567</a></p>
+            </div>
+            <div class="footer__info">
+              <img src="images/icon-email.svg" alt="icon email" />
+              <p><a href="mailto:example@fylo.com">example@fylo.com</a></p>
+            </div>
+          </div>
+          <div class="col-3 col">
+            <ul>
+              <a href="#"><li>About Us</li></a>
+              <a href="#">
+                <li>Jobs</li>
+              </a>
+              <a href="#">
+                <li>Press</li>
+              </a>
+
+              <a href="#">
+                <li>Blog</li>
+              </a>
+            </ul>
+            <ul>
+              <a href="#"> <li>Contact Us</li></a>
+              <a href="#"><li>Terms</li></a>
+              <a href="#"> <li>Privacy</li></a>
+            </ul>
+          </div>
+          <div class="col-4 col">
+            <div class="social-icons">
+              <a href="#"> <i class="fab fa-facebook-f"></i></a>
+
+              <a href="#"> <i class="fab fa-twitter"></i></a>
+
+              <a href="#"><i class="fab fa-instagram"></i> </a>
+            </div>
           </div>
         </div>
-        <div class="col-2 col">
-          <div class="footer__info">
-            <img src="images/icon-phone.svg" alt="icon phone" />
-            <p><a href="tel:+1-543-123-4567">+1-543-123-4567</a></p>
-          </div>
-          <div class="footer__info">
-            <img src="images/icon-email.svg" alt="icon email" />
-            <p><a href="mailto:example@fylo.com">example@fylo.com</a></p>
-          </div>
-        </div>
-        <div class="col-3 col">
-          <ul>
-            <a href="#"><li>About Us</li></a>
-            <a href="#">
-              <li>Jobs</li>
-            </a>
-            <a href="#">
-              <li>Press</li>
-            </a>
-
-            <a href="#">
-              <li>Blog</li>
-            </a>
-          </ul>
-          <ul>
-            <a href="#"> <li>Contact Us</li></a>
-            <a href="#"><li>Terms</li></a>
-            <a href="#"> <li>Privacy</li></a>
-          </ul>
-        </div>
-        <div class="col-4 col">
-          <div class="social-icons">
-            <a href="#"> <i class="fab fa-facebook-f"></i></a>
-
-            <a href="#"> <i class="fab fa-twitter"></i></a>
-
-            <a href="#"><i class="fab fa-instagram"></i> </a>
-          </div>
-        </div>
-      </div>
+      </section>
     </footer>
-
-    <!-- <footer>
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
-      </p>
-    </footer> -->
   </body>
 </html>
