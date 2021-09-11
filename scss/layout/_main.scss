@@ -1,4 +1,5 @@
 @use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
 
 // FEATURE Section
 //------------------------------------
@@ -51,7 +52,7 @@
 .productive {
   margin: 3rem auto 0;
 
-  @media screen and (min-width: 1024px) {
+  @include respond(large) {
     & .container {
       width: 75%;
       display: flex;
@@ -73,16 +74,18 @@
 //------------------------------------
 
 .testimonial {
-  padding: 25rem 0;
+  padding: 15rem 0 25rem;
+
+  @include respond(large) {
+    padding: 25rem 0;
+  }
 
   .cards {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     flex-direction: column;
 
-    @media screen and (min-width: 1024px) {
+    @include respond(large) {
       width: 70%;
       margin: 0 auto;
       flex-direction: row;

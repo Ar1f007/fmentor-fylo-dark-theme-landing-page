@@ -1,0 +1,35 @@
+@use '../abstracts/variables' as *;
+
+@mixin font-color($color, $amount) {
+  color: darken($color: $color, $amount: $amount);
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Media Query
+@mixin respond($breakpoint) {
+  // 769px++
+  @if $breakpoint == medium {
+    @media screen and (min-width: 769px) {
+      @content;
+    }
+  }
+
+  // 1024px++
+  @if $breakpoint == large {
+    @media screen and (min-width: 1024px) {
+      @content;
+    }
+  }
+
+  // 1600px++
+  @if $breakpoint == very-large {
+    @media screen and (min-width: 1600px) {
+      @content;
+    }
+  }
+}

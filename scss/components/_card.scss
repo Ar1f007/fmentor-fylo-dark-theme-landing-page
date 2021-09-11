@@ -1,4 +1,5 @@
 @use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
 
 // Testimonial Section
 //------------------------------------
@@ -14,14 +15,15 @@
   margin-bottom: 2.5rem;
   position: relative;
 
-  @media screen and (min-width: 1024px) {
-    width: 30%;
+  @include respond(large) {
+    width: 31%;
+    padding: 3rem;
   }
 
   &__text {
     font-size: 1.155rem;
     line-height: 2;
-    color: darken($color: $white, $amount: 20%);
+    @include font-color($white, 20%);
     margin-bottom: 1.5rem;
   }
 
@@ -45,7 +47,7 @@
 
       p {
         font-size: 1rem;
-        color: darken($color: $white, $amount: 25%);
+        @include font-color($white, 25%);
       }
     }
   }

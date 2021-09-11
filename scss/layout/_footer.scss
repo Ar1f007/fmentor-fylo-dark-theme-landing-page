@@ -1,9 +1,10 @@
 @use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
 
 .footer {
   width: 100%;
   padding: 3rem 0 2rem;
-  color: darken($color: $white, $amount: 20%);
+  @include font-color($white, 20%);
 
   &__logo {
     width: 85%;
@@ -16,21 +17,7 @@
   }
 }
 
-@media screen and (min-width: 1024px) {
-  section:last-of-type {
-    position: relative;
-    top: -8rem;
-  }
-
-  .attribution {
-    position: absolute;
-    left: 50%;
-    top: 90%;
-    transform: translateX(-50%);
-  }
-}
 // Get started / Subscribe Section
-
 .subscribe {
   position: relative;
   top: -17rem;
@@ -42,7 +29,7 @@
     padding: 3.5rem 2.8rem 3rem;
   }
 
-  @media screen and (min-width: 1024px) {
+  @include respond(large) {
     & .container {
       width: 50%;
     }
@@ -57,7 +44,7 @@
     margin-bottom: 3rem;
   }
 
-  @media screen and (min-width: 1024px) {
+  @include respond(large) {
     display: flex;
 
     & > *:not(:first-of-type) {
@@ -78,14 +65,28 @@
     margin-right: 2.5rem;
   }
 
-  @media screen and (min-width: 1024px) {
+  @include respond(large) {
     align-items: flex-start;
     margin-bottom: 2rem;
   }
 }
 
+@include respond(large) {
+  section:last-of-type {
+    position: relative;
+    top: -8rem;
+  }
+
+  .attribution {
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translateX(-50%);
+  }
+}
+
 .col a {
-  color: darken($color: $white, $amount: 20%);
+  @include font-color($white, 20%);
 }
 
 .col a:hover {
@@ -93,10 +94,6 @@
 }
 
 .col-1 {
-  .footer__logo img {
-    width: 150px;
-  }
-
   .footer__info img {
     align-self: flex-start;
   }
@@ -105,26 +102,28 @@
 .footer__info--col-1 {
   margin: 4rem 0 1rem;
 
-  @media screen and (min-width: 1024px) {
+  @include respond(large) {
     margin: 0;
   }
 }
 
 .col-2 {
-  & p {
+  p {
     margin: 1rem 0;
   }
+
   @media screen and (min-width: 1000px) {
     margin: 0;
     display: flex;
     flex-direction: column;
-    padding-left: 5%;
     justify-content: flex-start;
+    padding-left: 5%;
 
     p {
       margin: 0;
     }
   }
+
   @media screen and (min-width: 1200px) {
     padding-left: 10%;
   }
@@ -132,19 +131,20 @@
 
 .col-3 {
   margin-top: 6rem;
-  & ul {
+
+  ul {
     padding-left: 0;
 
-    & li {
+    li {
       margin: 1.5rem 0;
     }
   }
 
-  & ul:last-child {
+  ul:last-child {
     margin-top: 5rem;
   }
 
-  @media screen and (min-width: 1024px) {
+  @include respond(large) {
     display: flex;
     justify-content: flex-end;
     margin: 0;
@@ -152,7 +152,7 @@
     ul {
       margin: 0;
 
-      & li:first-child {
+      li:first-child {
         margin-top: 0;
       }
     }
@@ -168,7 +168,7 @@
   padding-top: 3rem;
   text-align: center;
 
-  @media screen and (min-width: 1024px) {
+  @include respond(large) {
     padding-top: 0;
   }
 
@@ -176,32 +176,30 @@
     display: flex;
     justify-content: center;
 
-    @media screen and (min-width: 1024px) {
+    @include respond(large) {
       justify-content: flex-end;
     }
   }
 
-  & a {
+  a {
     width: 3.2rem;
     height: 3.2rem;
     display: inline-block;
     border: 1.5px solid $white;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     margin: 0 1rem;
     transition: all 0.3s;
+
+    i {
+      @include font-color($white, 20%);
+      font-size: 1.5rem;
+      transition: all 0.3s;
+    }
   }
 
-  & a i {
-    color: darken($color: $white, $amount: 20%);
-    font-size: 1.5rem;
-    transition: all 0.3s;
-  }
-
-  & a:hover,
-  & a:hover i {
+  a:hover,
+  a:hover i {
     border-color: $cyan;
     color: $cyan;
   }

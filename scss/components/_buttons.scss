@@ -1,4 +1,5 @@
 @use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
 
 // Header
 // ----------------------------
@@ -6,13 +7,15 @@
   width: 20rem;
   height: 4rem;
   border: none;
+
   display: inline-block;
   background: linear-gradient(to right, $cyan, $blue);
   border-radius: 5rem;
-  color: $white;
+
   font-family: $raleway-font;
   font-weight: 700;
   letter-spacing: 1px;
+  color: $white;
   cursor: pointer;
   transform: linear-gradient 0.5s;
 
@@ -24,12 +27,14 @@
 // Productive
 // ----------------------------
 .how-it-work-btn {
-  border: none;
-  color: darken($color: $cyan, $amount: 5%);
-  background: none;
-  border-bottom: 1.8px solid darken($color: $cyan, $amount: 5%);
   width: max-content;
+  background: none;
+  border: none;
+  border-bottom: 1.8px solid darken($color: $cyan, $amount: 5%);
+
+  @include font-color($white, 5%);
   padding: 0 0 5px 0;
+
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -58,10 +63,6 @@
   text-transform: capitalize;
   cursor: pointer;
   transform: linear-gradient 0.5s;
-
-  @media screen and (min-width: 1024px) {
-    // margin-bottom: 2rem;
-  }
 
   &:hover {
     background: $cyan;

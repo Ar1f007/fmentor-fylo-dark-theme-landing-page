@@ -1,4 +1,5 @@
 @use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
 
 .header {
   width: 100%;
@@ -9,7 +10,7 @@
   background-position: center;
   background-size: 100%;
 
-  @media screen and (min-width: 1024px) {
+  @include respond(large) {
     background: url("../images/bg-curvy-desktop.svg");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -28,7 +29,7 @@
     position: relative;
     top: 4rem;
 
-    @media screen and (min-width: 1024px) {
+    @include respond(large) {
       width: max-content;
       top: 0;
     }
@@ -46,13 +47,14 @@
     width: 95%;
     letter-spacing: 0.1rem;
     line-height: 1.6;
-    color: darken($color: $white, $amount: 5%);
+    @include font-color($white, 5%);
 
-    @media screen and (min-width: 1024px) {
+    @include respond(large) {
       width: 30%;
       margin: 2.5rem auto;
     }
-    @media screen and (min-width: 1600px) {
+
+    @include respond(very-large) {
       width: 25%;
     }
   }

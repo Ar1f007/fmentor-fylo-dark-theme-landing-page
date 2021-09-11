@@ -163,10 +163,10 @@ body {
   display: inline-block;
   background: linear-gradient(to right, #65e2d9, #47a8d1);
   border-radius: 5rem;
-  color: white;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
+  color: white;
   cursor: pointer;
   transform: linear-gradient 0.5s;
 }
@@ -175,13 +175,13 @@ body {
 }
 
 .how-it-work-btn {
-  border: none;
-  color: #4fded4;
-  background: none;
-  border-bottom: 1.8px solid #4fded4;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  background: none;
+  border: none;
+  border-bottom: 1.8px solid #4fded4;
+  color: #f2f2f2;
   padding: 0 0 5px 0;
   display: flex;
   align-items: center;
@@ -231,7 +231,8 @@ body {
 }
 @media screen and (min-width: 1024px) {
   .card {
-    width: 30%;
+    width: 31%;
+    padding: 3rem;
   }
 }
 .card__text {
@@ -517,7 +518,12 @@ body {
 }
 
 .testimonial {
-  padding: 25rem 0;
+  padding: 15rem 0 25rem;
+}
+@media screen and (min-width: 1024px) {
+  .testimonial {
+    padding: 25rem 0;
+  }
 }
 .testimonial .cards {
   width: 100%;
@@ -553,19 +559,6 @@ body {
   width: 150px;
 }
 
-@media screen and (min-width: 1024px) {
-  section:last-of-type {
-    position: relative;
-    top: -8rem;
-  }
-
-  .attribution {
-    position: absolute;
-    left: 50%;
-    top: 90%;
-    transform: translateX(-50%);
-  }
-}
 .subscribe {
   position: relative;
   top: -17rem;
@@ -615,6 +608,19 @@ body {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  section:last-of-type {
+    position: relative;
+    top: -8rem;
+  }
+
+  .attribution {
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translateX(-50%);
+  }
+}
 .col a {
   color: #cccccc;
 }
@@ -623,9 +629,6 @@ body {
   color: white;
 }
 
-.col-1 .footer__logo img {
-  width: 150px;
-}
 .col-1 .footer__info img {
   align-self: flex-start;
 }
@@ -647,8 +650,8 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    padding-left: 5%;
     justify-content: flex-start;
+    padding-left: 5%;
   }
   .col-2 p {
     margin: 0;
@@ -725,7 +728,8 @@ body {
   font-size: 1.5rem;
   transition: all 0.3s;
 }
-.col-4 a:hover, .col-4 a:hover i {
+.col-4 a:hover,
+.col-4 a:hover i {
   border-color: #65e2d9;
   color: #65e2d9;
 }/*# sourceMappingURL=main.css.map */
