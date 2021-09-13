@@ -168,10 +168,10 @@ body {
   letter-spacing: 1px;
   color: white;
   cursor: pointer;
-  transform: linear-gradient 0.5s;
+  transform: all 0.5s;
 }
 .cta:hover {
-  background: linear-gradient(90deg, #47a8d1, #65e2d9);
+  background: #47a8d1;
 }
 
 .how-it-work-btn {

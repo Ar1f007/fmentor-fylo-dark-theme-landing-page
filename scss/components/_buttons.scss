@@ -17,10 +17,10 @@
   letter-spacing: 1px;
   color: $white;
   cursor: pointer;
-  transform: linear-gradient 0.5s;
+  transform: all 0.5s;
 
   &:hover {
-    background: linear-gradient(90deg, $blue, $cyan);
+    background: $blue;
   }
 }
 
