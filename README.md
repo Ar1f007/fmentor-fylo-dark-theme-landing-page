@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution URL](https://github.com/Ar1f007/fmentor-fylo-dark-theme-landing-page)
+- [Live site](https://fmentor-fylo-dark-theme-landing-page.vercel.app/)
 
 ## My process
 
